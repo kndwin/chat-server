@@ -6,7 +6,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config();
 
-const PORT = process.env.PORT || 3001;
+const PORT = 443;
 const app = express();
 const server = http.createServer(app);
 let rooms: any = [];
