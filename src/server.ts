@@ -3,6 +3,8 @@ import http from "http";
 import { v4 } from "uuid";
 import { Server } from "socket.io";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 const PORT = process.env.PORT || 3001;
 const app = express();
