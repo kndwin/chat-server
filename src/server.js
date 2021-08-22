@@ -13,6 +13,8 @@ var http_1 = __importDefault(require("http"));
 var uuid_1 = require("uuid");
 var socket_io_1 = require("socket.io");
 var cors_1 = __importDefault(require("cors"));
+var dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
 var PORT = process.env.PORT || 3001;
 var app = express_1.default();
 var server = http_1.default.createServer(app);
